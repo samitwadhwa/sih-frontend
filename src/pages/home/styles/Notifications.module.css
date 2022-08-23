@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 35%;
+  align-items: center;
+  padding: 24px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #000000;
+}
+
+.title {
+  align-self: start;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.notifContainer {
+  height: 75vh;
+  overflow: auto;
+}
+
+.notif {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 0.5rem;
+}
+
+.notif:nth-child(3) {
+  order: 1;
+}
+
+.notifContent {
+  width: 60%;
+}
+
+.time {
+  font-weight: 300;
+  font-size: 14px;
+}

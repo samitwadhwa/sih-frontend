@@ -1,0 +1,258 @@
+/* * {
+  outline: #2600ff 1px solid;
+  background: rgb(0 100 0 / 0.1);
+}
+*:nth-child(2n) {
+  outline: rgb(255, 0, 0) 1px solid;
+  background: rgb(100 100 0 / 0.1);
+} */
+.analytics-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 60% 40%;
+  row-gap: 8px;
+  column-gap: 10px;
+  height: 55%;
+  width: 63%;
+  padding-right: 1%;
+}
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 0 1.5rem; */
+}
+.side-bar {
+  padding-left: 1.8%;
+  /* margin-right: 30px; */
+  /* width: 20%; */
+}
+.data-analytics {
+  width: 100vw;
+  display: flex;
+  height: auto;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.verticalLine {
+  border-left: 4px solid #b3cb50;
+  height: 200px;
+}
+.Images {
+  margin-left: 11rem;
+}
+.container-tabs {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #f1f1f1;
+  word-break: break-all;
+}
+.bloc-update-tabs2 {
+  height: 82.6vh;
+  display: flex;
+  flex-direction: column;
+  /* width: 0rem; */
+}
+.bloc-update-tabs {
+  display: flex;
+  flex-direction: column;
+  /* width: 9rem; */
+}
+.btn:hover {
+  cursor: pointer;
+}
+.bloc-tabs {
+  display: flex;
+}
+/* @media screen and (min-width: 700px) { */
+.tabs {
+  padding: 15px;
+  text-align: center;
+  width: 50%;
+  background: white;
+  cursor: pointer;
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+}
+.tabs-update {
+  padding: 15px;
+  text-align: center;
+  width: 12vw;
+  background-color: rgba(255, 255, 255, 0.275);
+  cursor: pointer;
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+  height: 50%;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+/* temp class for client must fix */
+.tabs-update-client {
+  padding: 15px;
+  text-align: center;
+  width: 15vw;
+  background-color: rgba(255, 255, 255, 0.275);
+  cursor: pointer;
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+  height: 50%;
+  font-size: 2rem;
+}
+/* .tabs:not(:last-child){
+  border-right: 1px solid rgba(0, 0, 0, 0.274);
+} */
+
+.active-tabs,
+.active-update-tabs {
+  background: white;
+}
+
+.active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 10px;
+  background: #b3cb50;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.active-update-tabs {
+  /* border: 1px solid rgb(77, 76, 76); */
+  border-right: 5px solid #b3cb50;
+  border-radius: 0.3rem;
+  /* margin-top: 0.7rem; */
+}
+.projectTabs{
+  font-weight: bold;
+}
+
+button {
+  border: none;
+}
+.content-tabs {
+  flex-grow: 1;
+}
+.btn3 {
+  background-color: #b3cb50;
+  border: 2px solid #b3cb50;
+  color: white;
+  border-radius: 4px;
+  margin-right: 2rem;
+}
+.content {
+  background: white;
+  /* width: 50%; */
+  height: 100vh;
+  display: none;
+  overflow: auto;
+}
+.content-pur {
+  /* background: white; */
+  /* width: 50%; */
+  /* height: 100vh; */
+  display: none;
+  overflow: auto;
+}
+.content h2 {
+  padding: 0px 0 5px 0px;
+}
+.content hr {
+  width: 100px;
+  height: 2px;
+  background: #222;
+  margin-bottom: 5px;
+}
+.content p {
+  width: 100%;
+  height: 100%;
+}
+
+.active-content {
+  display: flex;
+  flex-direction: column;
+}
+.active-content-home {
+  display: flex;
+  /* flex-direction: column; made change here */
+}
+/* .toggleUpdateState{
+  font-family: 'Quicksand', sans-serif;
+} */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Updates {
+  display: flex;
+  /* width: 0rem; */
+}
+.markComplete {
+  height: fit-content !important;
+  border-radius: 10.2943px;
+  padding: 0.4rem 1.5rem;
+  background-color: #7b931b;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+}
+
+.reports {
+  min-height: 68vh;
+  box-shadow: 0 0 2px black;
+  margin: 8px;
+  border-radius: 5px;
+  overflow: auto !important;
+  position: relative;
+}
+/* } */
+@media screen and (max-width: 768px) {
+  .content-tabs {
+    overflow: hidden;
+  }
+  html {
+    font-size: 65%;
+  }
+
+  input {
+    font-size: 0.9rem;
+  }
+}
+/* @media screen and (max-width: 768px) {
+  .card{
+    width: 60rem;
+    height: 18rem;
+  }
+  .active-tabs, .active-update-tabs  {
+   background: white;
+   width: 28rem;
+ }
+ .bloc-tabs {
+   /* display: flex; */
+/* width: 47rem; */
+/* }
+ .container{
+   width: 148%;
+ }
+ .active-update-tabs{
+
+  width: 9rem;
+}
+ .item-1 h1{
+   width: 17rem;
+ } */

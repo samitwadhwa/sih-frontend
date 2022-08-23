@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.total::after {
+  content: "Total";
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+.active::after {
+  content: "Active";
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+}

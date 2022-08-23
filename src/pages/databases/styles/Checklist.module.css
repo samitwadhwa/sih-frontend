@@ -1,0 +1,109 @@
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.bgContainer {
+  background-color: rgba(118, 123, 106, 0.1);
+  width: 100%;
+  height: 93.5vh;
+  overflow: scroll;
+}
+
+.container {
+  width: 85%;
+  max-width: 1500px;
+  margin-inline: auto;
+  z-index: 10000;
+}
+
+.contentHead {
+  justify-content: space-between;
+}
+
+.react-grid-Cell {
+  border: none;
+}
+.tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.tab::after {
+  content: "";
+  position: relative;
+  border-radius: 0;
+  width: 105%;
+  height: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translate();
+}
+.activeTab {
+  font-weight: bold;
+}
+.activeTab::after {
+  content: "";
+  background-color: rgba(123, 147, 27, 1);
+  transform: translateY(0.52rem);
+}
+
+.button {
+  background-color: #7B931B;
+  border-radius: 0.5rem;
+  color: white;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  width: 99%;
+}
+
+.categoryText {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.categoryButtons {
+  display: flex;
+  gap: 1rem;
+  padding-inline: 2rem;
+  padding-block: 1.5rem;
+  
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-block: 2.5rem;
+}
+
+.dynamicInput {
+  margin: 0;
+  width: 92.5%;
+  font-weight: 400;
+  padding-block: 0.25rem;
+  padding-inline: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+}
+
+.dynamicInput:disabled {
+  background-color: #fff;
+  padding-inline: 0;
+  color: black;
+  border: none;
+}
